@@ -210,6 +210,7 @@ a:hover {
 .citation>q {
     text-align: center;
     font-size: 15px;
+    color: #000;
 }
 
 .d-bloc .panel button:hover,
@@ -844,11 +845,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/main-qui-ecrit-sur-postite.jpg");
+    background-image: url("img/main-qui-ecrit-sur-postite.webp");
 }
 
 @media (max-width: 1024px) {
