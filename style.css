@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #fff;
 }
 
 .d-bloc .a-btn:hover,
@@ -196,6 +196,20 @@ a:hover {
 .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
+}
+
+.citation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.citation>q {
+    text-align: center;
+    font-size: 15px;
 }
 
 .d-bloc .panel button:hover,
@@ -534,6 +548,8 @@ a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -677,12 +693,16 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+}
+
+.col-sm-12 p {
+    color: #FFFF9B;
 }
 
 .h1 {
@@ -701,7 +721,10 @@ p {
 
 .social {
     max-width: 400px;
+    width: 80%;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -736,7 +759,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFF!important;
+    
 }
 
 .portfolio-thumb {
@@ -753,7 +777,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color:#000;
+    opacity: .8;
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,16 +796,16 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #000;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -789,7 +814,8 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #FFFF9B!important;
+    text-transform: uppercase;
 }
 
 .ltc-white:hover {
@@ -822,7 +848,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/main-qui-ecrit-sur-postite.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,17 +874,6 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
 
 @media (max-width: 991px) {
     .container {
@@ -872,10 +887,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +896,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
